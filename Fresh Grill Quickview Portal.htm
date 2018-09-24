@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+       
+<META charset="utf-8">           
+<META http-equiv="X-UA-Compatible" content="IE=edge">               
+<META name="viewport" content="width=device-width, initial-scale=1">             
+  <TITLE>Fresh Grill Quickview Portal</TITLE>
+     <LINK href="/favicon.ico" rel="icon" type="image/ico">
+     <!-- Bootstrap -->
+        <LINK href="Fresh%20Grill%20Quickview%20Portal_files/bootstrap.min.css" rel="stylesheet">
+        <LINK href="Fresh%20Grill%20Quickview%20Portal_files/css.css" rel="stylesheet" type="text/css">
+     <LINK href="Fresh%20Grill%20Quickview%20Portal_files/normalize.css" rel="stylesheet">
+     <LINK href="Fresh%20Grill%20Quickview%20Portal_files/cutegrids.css" rel="stylesheet">
+     <LINK href="Fresh%20Grill%20Quickview%20Portal_files/style.css" rel="stylesheet">     
+	<SCRIPT src="Fresh%20Grill%20Quickview%20Portal_files/jquery.min.js"></SCRIPT>
+
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $( function() {
+          var el=$( "#sdate" );
+          el.datepicker();
+      } );
+  </script>
+
+
+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> 
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->   
+  <!--[if lt IE 9]>
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]--> 
+    
+<SCRIPT>
+
+    $(document).ready(function(){
+
+        $("#nav-mobile").html($("#nav-main").html());
+
+        $("#nav-trigger span").click(function(){
+
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+
+                $(this).removeClass("open");
+
+            } else {
+
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+
+                $(this).addClass("open");
+
+            }
+
+        });
+
+    });
+
+</SCRIPT>
+  
+<STYLE>
+
+th, td {
+
+        padding: 5px;
+
+        text-align: left;
+
+}
+
+
+.odd {
+	background-color:#ddd
+}
+
+</STYLE>
+  
+<META name="GENERATOR" content="MSHTML 11.00.9600.19130"></HEAD> 
+<BODY>
+<HEADER class="header">
+<DIV class="brand-logo container text-center">
+    <A href="http://quickview.freshgrillfoods.com/dashboard.pl?sdate=">
+	<IMG alt="Mffais" src="Fresh%20Grill%20Quickview%20Portal_files/logo.png">
+    </A>
+</DIV>
+<DIV class="row text-center">
+    <DIV class="cute-12-tablet">
+	<A href="http://quickview.freshgrillfoods.com/dashboard.pl?sdate=">Back to Dash Board</A>
+        -kevin -
+        <A href="http://quickview.freshgrillfoods.com/logout.pl">Log Out</A> </DIV></DIV></HEADER>
+
+    <DIV class="row text-center">
+	<DIV class="cute-12-tablet">
+	<H1>Current Shipment Date:  </H1>
+	<BR>
+	<FORM action="" method="get">
+		<INPUT name="sdate" type="text" id="sdate">
+ 		<INPUT type="submit" value="Change Fresh Grill Shipment Date">
+	</FORM>
+    </DIV>
+    <DIV class="cute-12-tablet ">
+	<TABLE style="margin-right: auto; margin-left: auto;" border="0" cellspacing="0" cellpadding="0">
+ 	    <TBODY>
+  	    <TR>
+    		<TD align="center" colspan="2">
+      		    <H2>Please select shipment date</H2>
+		</TD>
+	    </TR>
+	    </TBODY>
+	</TABLE>
+    </DIV>
+</DIV>
+<FOOTER class="text-center">
+    <DIV class="row">
+    	<P class="copyright">© Copyright Mreshgrillfoods.com 2017</P>
+    </DIV>
+</FOOTER>
+<!-- SCRIPT src="Fresh%20Grill%20Quickview%20Portal_files/jquery.min(1).js"></SCRIPT  -->
+
+     <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    
+    <SCRIPT src="Fresh%20Grill%20Quickview%20Portal_files/bootstrap.min.js"></SCRIPT>
+</BODY>
+</HTML>
