@@ -6,11 +6,10 @@
 
 lines:
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
 <script>
     $(function() {
-        var el=$("#sdate");
-        el.datepicker();
+        $("#sdate").datepicker();
     });
 </script>
 
