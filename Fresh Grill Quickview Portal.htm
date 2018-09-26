@@ -102,7 +102,10 @@
                        style="width:300px; margin:10px;"
                        value="Change Fresh Grill Shipment Date">
           	</form>
+        </div>
 
+        <div class="row">
+              <canvas id="myChart" width="400" height="200"></canvas>
         </div>
     </div>
 
@@ -118,6 +121,33 @@
                 t.style.boxShadow = 'inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6)'
             }
         }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["2017-09-20", "2017-09-21", "2017-09-22", "2017-09-23", "2017-09-24", "2017-09-25"],
+                datasets: [{
+                    label: 'Invoices Summary',
+                    data: [4238.80, 6067.9, 0, 0, 6273.81, 5190.30],
+                    borderWidth: 1,
+                    borderColor: 'rgba(255,99,132,1)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)'
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
     </script>
 
     <footer class="text-center"
