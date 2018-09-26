@@ -86,28 +86,41 @@
           	<br>
 
           	<form action="" method="get">
-          		<input type="text"
-                     name="sdate"
-                     class="form-control"
-                     style="width:100px; margin:10px;"
-                     placeholder="date"
-                     id="sdate">
+            		<input type="text"
+                       name="sdate"
+                       class="form-control"
+                       style="width:100px; margin:10px;"
+                       placeholder="date"
+                       id="sdate">
 
-              <input type="text"
-                     name="snumber"
-                     class="form-control"
-                     style="width:100px; margin:10px;"
-                     placeholder="number"
-                     id="snumber">
+                <input type="text"
+                       class="form-control"
+                       style="width:100px; margin:10px;"
+                       placeholder="number"
+                       onkeyup="verify_number(this)">
 
-           		<input type="submit"
-                     class="form-control btn-success"
-                     style="width:300px; margin:10px;"
-                     value="Change Fresh Grill Shipment Date">
+             		<input type="submit"
+                       class="form-control btn-success"
+                       style="width:300px; margin:10px;"
+                       value="Change Fresh Grill Shipment Date">
           	</form>
 
         </div>
     </div>
+
+    <script type="text/javascript">
+        function verify_number(t) {
+            if (t.value.match(/^(\d){1,10}$/g)) {
+                t.setCustomValidity('')
+                t.style.borderColor = ''
+                t.style.boxShadow = ''
+            } else {
+                t.setCustomValidity('Wrong number')
+                t.style.borderColor = '#FF0000'
+                t.style.boxShadow = 'inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6)'
+            }
+        }
+    </script>
 
     <footer class="text-center"
             style="position: absolute; 
